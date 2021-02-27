@@ -1,0 +1,15 @@
+.design img {
+    width: 80px;
+}
+
+.design {
+    width: 300px;
+    height: 300px;
+    padding: 0 20px;
+    border: 2px solid red;
+    margin: 2px;
+}
+
+.textLeft {
+    text-align: left;
+}
