@@ -26,7 +26,8 @@ const Cart = (props) => {
 
     let total = 0
     for(let i = 0; i< cart.length; i++) {
-        total += cart.pupulation
+        console.log(cart)
+        total += parseFloat(cart[i].population)
     }
 
     return (

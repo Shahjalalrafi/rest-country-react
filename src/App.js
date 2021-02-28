@@ -4,6 +4,7 @@ import './App.css';
 import Country from './components/country/Country';
 import Cart from './components/cart/Cart';
 import Profile from './components/profile/Profile';
+import Friend from './components/friends/Friend';
 
 
 function App() {
@@ -17,21 +18,17 @@ function App() {
   },[])
 
   const handleCountry = (country) => {
-    const newCart = [...cart, setCart]
+    const newCart = [...cart, country]
     setCart(newCart)
   }
 
-  const obj = (
-    <div>
-      <h1>hello</h1>
-      <h1>hi</h1>
-    </div>
-  )
+
   
   return (
     <div className="App">
+      <Friend></Friend>
 
-      <Profile></Profile>
+      {/* <Profile></Profile>
       <h1>Total country: {countries.length}</h1>    
       <Cart cartDetails={cart}></Cart>
 
@@ -39,7 +36,7 @@ function App() {
         {
           countries.map(country => <Country countryDetails = {country} addCountry = {handleCountry}></Country>)
         }
-      </div>
+      </div> */}
       
 
     </div>

@@ -8,7 +8,7 @@ import Social from './Social';
 const Profile = () => {
     return (
         <div>
-            <div className='container'>
+            <div className='contain'>
                   <Bio></Bio>
                   <Skills></Skills>
                   <Social></Social>
